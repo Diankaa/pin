@@ -167,7 +167,9 @@
     -webkit-tap-highlight-color: transparent;
     background-color: transparent;
 
-    &:active {
+    &:active,
+    &:focus,
+    &:hover {
       outline: 0;
       background-color: rgb(236, 236, 236);
     }
