@@ -2,6 +2,14 @@ $(document).ready(function() {
     let enterCode = "";
     enterCode.toString();
 
+    $("#numbers button").click(function() {
+        console.log(8)
+        $(this).addClass("clicked");
+        setTimeout(() => {
+            $(this).removeClass("clicked");
+        }, 100);
+    })
+
     $("#numbers button:not(.backspace)").click(function() {
         let pin = "1234";
         let clickedNumber = $(this).text().toString();
