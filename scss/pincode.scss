@@ -61,7 +61,6 @@
   &__table {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
 
     &-top {
@@ -129,7 +128,10 @@
 }
 
 .numbers {
-  padding: 0 0 30px 20px;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
 
   &__row {
     display: flex;
